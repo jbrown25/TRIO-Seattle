@@ -1,0 +1,29 @@
+.btn-primary {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	background-color: $green;
+	border: none;
+	font-size: 1em;
+	font-weight: 600;
+	border-radius: 51px;
+	letter-spacing: 1px;
+	transition: background-color 0.15s ease;
+	box-shadow: $button_shadow;
+
+	&:focus {
+		background-color: $green;
+	}
+
+	&:hover,
+	&:active {
+		background-color: $dark_green;
+		border: none;
+	}
+}
+
+.btn-primary.btn-lg {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 22px;
+	font-weight: 600;
+}
