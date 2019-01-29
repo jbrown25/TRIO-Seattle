@@ -1,4 +1,14 @@
-.skip-link,
-.screen-reader-text {
+// .skip-link,
+// .screen-reader-text {
+// 	position: absolute;
+// }
+
+.skip-link {
 	position: absolute;
+}
+
+.admin-bar {
+	.navbar-fixed-top {
+		top: 33px;
+	}
 }

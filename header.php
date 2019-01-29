@@ -66,10 +66,12 @@
 	<header id="masthead" class="site-header">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-6 <?php echo !is_front_page() ? 'col-md-offset-3' : '' ?>">
 					<div class="masthead_content">
 						<h1><?php bloginfo('name'); ?></h1>
-						<p class="masthead_sub_text"><?php echo get_theme_mod('trio_front_page_text'); ?></p>
+						<?php if(is_front_page()) : ?>
+								<p class="masthead_sub_text"><?php echo get_theme_mod('trio_front_page_text'); ?></p>
+						<?php endif; ?>
 						<a href="<?php echo get_theme_mod('trio_header_button_link'); ?>" class="btn btn-primary btn-lg" role="button" id="header_button_link">DONATE TO TRIO</a>
 					</div>
 				</div>
