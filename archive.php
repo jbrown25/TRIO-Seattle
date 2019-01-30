@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area archive">
 		<main id="main" class="site-main">
 			<?php trio_breadcrumbs(); ?>
 
@@ -50,5 +50,4 @@ get_header();
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();
