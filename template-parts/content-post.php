@@ -31,7 +31,12 @@
 		</header><!-- .entry-header -->
 		<div class="entry-content">
 			<?php
-			the_excerpt();
+			//display content
+			if(is_archive() || is_home()){
+				the_excerpt();
+			}else{
+				the_content();
+			}
 
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'trio-v1' ),

@@ -209,6 +209,18 @@ a {
     margin: 8px 0;
     font-weight: 700; }
 
+.single_post .attachment-post-thumbnail,
+.single_post .size-post-thumbnail,
+.single_post .wp-post-image {
+  display: block;
+  width: 300px;
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto 25px auto; }
+
+.single_post .post_link {
+  display: none; }
+
 /*--------------------------------------------------------------
 ## Story
 --------------------------------------------------------------*/
