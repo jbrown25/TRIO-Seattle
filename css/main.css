@@ -56,6 +56,11 @@ a {
 .green {
   color: #00640C; }
 
+.screen-reader-text {
+  opacity: 0;
+  height: 0;
+  position: absolute; }
+
 #masthead {
   background-image: url("../img/large_background.jpeg");
   /*default image*/
@@ -224,6 +229,23 @@ a {
 /*--------------------------------------------------------------
 ## Story
 --------------------------------------------------------------*/
+.pagination {
+  margin-top: 0; }
+  .pagination .page-numbers {
+    padding: 6px 8px;
+    border: 2px solid #00640C;
+    color: #fff;
+    background-color: #00640C; }
+  .pagination .page-numbers:hover {
+    background-color: #003100;
+    border-color: #003100; }
+  .pagination .page-numbers.current {
+    color: #555;
+    background-color: #fff;
+    border: 2px solid #D8D8D8; }
+  .pagination .page-numbers.current:hover {
+    background-color: #fff; }
+
 .site-footer {
   background-color: #141414;
   padding: 75px 0; }

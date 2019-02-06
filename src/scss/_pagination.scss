@@ -1,0 +1,25 @@
+.pagination {
+	margin-top: 0;
+
+	.page-numbers {
+		padding: 6px 8px;
+		border: 2px solid $green;
+		color: #fff;
+		background-color: $green;
+	}
+
+	.page-numbers:hover {
+		background-color: $dark_green;
+		border-color: $dark_green;
+	}
+
+	.page-numbers.current {
+		color: #555;
+		background-color: #fff;
+		border: 2px solid #D8D8D8;
+	}
+
+	.page-numbers.current:hover {
+		background-color: #fff;
+	}
+}
