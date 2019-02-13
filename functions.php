@@ -165,6 +165,8 @@ function trio_v1_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'trio_v1_scripts' );
 
+require_once get_template_directory() . '/inc/post-types.php';
+
 /**
  * Implement the Custom Header feature.
  */
