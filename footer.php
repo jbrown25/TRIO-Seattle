@@ -17,9 +17,18 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-4">
-
+					<?php if ( is_active_sidebar( 'footer_column_1' ) ) : ?>
+							<?php dynamic_sidebar( 'footer_column_1' ); ?>
+					<?php endif; ?>
 				</div>
 				<div class="col-sm-4"></div>
+					<?php if ( is_active_sidebar( 'footer_column_2' ) ) : ?>
+						<?php dynamic_sidebar( 'footer_column_2' ); ?>
+					<?php endif; ?>
+				<div class="col-sm-4"></div>
+					<?php if ( is_active_sidebar( 'footer_column_3' ) ) : ?>
+						<?php dynamic_sidebar( 'footer_column_3' ); ?>
+					<?php endif; ?>
 				<div class="col-sm-4">
 					<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'trio-v1' ) ); ?>">
 						<?php
