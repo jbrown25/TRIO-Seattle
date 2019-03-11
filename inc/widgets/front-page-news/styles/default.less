@@ -1,0 +1,40 @@
+.news_article_widget {
+	h2 {
+		margin: 20px 0 10px 0;
+
+	}
+
+	.fp_section_subheading {
+		font-size: 22px;
+		margin: 0 0 10px 0;
+	}
+
+	.news_img_desktop,
+	.news_img_phone {
+		display: block;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+
+	.news_img_phone {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.news_article_widget {
+		.btn-primary {
+			display: block;
+			margin-bottom: 20px;
+		}
+
+		.news_img_desktop {
+			display: none;
+		}
+
+		.news_img_phone {
+			display: block;
+			margin-bottom: 12px;
+		}
+	}
+}

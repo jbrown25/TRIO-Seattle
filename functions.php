@@ -193,6 +193,15 @@ require get_template_directory() . '/inc/customizer.php';
 
 require get_template_directory() . '/inc/theme-functions.php';
 
+/* require get_template_directory() . '/inc/init-widgets.php'; */
+
+//siteorigin widgets
+function add_my_awesome_widgets_collection($folders){
+    $folders[] = get_template_directory() . '/inc/widgets/';
+    return $folders;
+}
+add_filter('siteorigin_widgets_widget_folders', 'add_my_awesome_widgets_collection');
+
 /**
  * Load Jetpack compatibility file.
  */

@@ -24,7 +24,7 @@
 	<?php trio_v1_post_thumbnail(); ?>
 	<div class="news_post_content">
 		<header class="entry-header">
-			<?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>
+			<a href="<?php echo get_post_permalink(); ?>"><?php the_title( '<h3 class="entry-title">', '</h3>' ); ?></a>
 			<p class="post-meta">
 				<span class="post-author">Posted by: <?php the_author_posts_link(); ?></span> | <span class="post-date"><?php echo get_the_date(); ?></span> | <span class="post-categories"><?php the_category(', '); ?></span>
 			</p>
