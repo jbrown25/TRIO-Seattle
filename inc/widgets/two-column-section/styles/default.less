@@ -1,0 +1,41 @@
+.two_column_section {
+
+	h2 {
+		margin: 20px 0 10px 0;
+	}
+	
+	.two_section_image_desktop,
+	.two_section_image_phone {
+		display: block;
+		margin: 0 auto;
+		max-width: 100%;
+		height: auto !important;
+	}
+
+	.two_section_image_phone {
+		display: none;
+	}
+
+	.btn-primary {
+		font-size: 0.9em;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.two_column_section {
+		.two_section_image_desktop {
+			display: none;
+		}
+
+		.two_section_image_phone {
+			display: block;
+		}
+
+		.btn-primary {
+			display: block;
+			margin-bottom: 20px;
+		}
+	}
+}

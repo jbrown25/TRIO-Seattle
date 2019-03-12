@@ -14,10 +14,10 @@
 <section class="news_article_widget">
 	<div class="row">
 		<div class="col-sm-7">
-			<h2>Recent News</h2>
 			<?php if($image_url) : ?>
 				<img src="<?php echo $image_url; ?>" alt="news image" class="news_img_phone" />
 			<?php endif; ?>
+			<h2>Recent News</h2>
 			<p class="fp_section_subheading"><?php echo $front_page_post->post_title; ?></p>
 			<p>
 				<?php
