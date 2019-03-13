@@ -196,11 +196,11 @@ require get_template_directory() . '/inc/theme-functions.php';
 /* require get_template_directory() . '/inc/init-widgets.php'; */
 
 //siteorigin widgets
-function add_my_awesome_widgets_collection($folders){
+function trio_siteorigin_widgets($folders){
     $folders[] = get_template_directory() . '/inc/widgets/';
     return $folders;
 }
-add_filter('siteorigin_widgets_widget_folders', 'add_my_awesome_widgets_collection');
+add_filter('siteorigin_widgets_widget_folders', 'trio_siteorigin_widgets');
 
 /**
  * Load Jetpack compatibility file.

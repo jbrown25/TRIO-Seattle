@@ -3,12 +3,12 @@
  * TWO COLUMN SECTION
  * @var array $instance
  * @var string $section_heading
- * @var not sure yet $section_content
+ * @var editor/string $section_content
  * @var string $button_text
  * @var string $button_link
- * @var not sure yet $section_image
- * @var string? $section_align
- * @var not sure? $section_image_size
+ * @var int $section_image
+ * @var string $section_align
+ * @var string $section_image_size
  */
 ?>
 
