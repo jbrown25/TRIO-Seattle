@@ -1,0 +1,55 @@
+input {
+	padding: 6px 12px;
+	border-radius: 25px;
+	border: 1px solid $green;
+	transition: border-color 0.25s ease;
+
+	&:focus {
+		border: 1px solid $dark_green;
+		outline: transparent;
+	}
+}
+
+#content input[type="submit"],
+#content input[type="button"] {
+	padding: 6px 12px;
+	display: block;
+	border-radius: 25px;
+	background-color: $green;
+	text-align: center;
+	color: #fff;
+	width: 100%;
+	cursor: pointer;
+	transition: background-color 0.25s ease;
+
+	&:hover {
+		background-color: $dark_green;
+	}
+}
+
+textarea {
+	border-radius: 15px;
+	border: 1px solid $green;
+	transition: border-color 0.25s ease;
+	padding: 6px 12px;
+
+	&:focus {
+		border: 1px solid $dark_green;
+		outline: transparent;
+	}
+}
+
+//ninja forms
+//content is id for page. to override NF styles
+#content .label-above .nf-field-label {
+	margin-bottom: 2px;
+
+	label {
+		display: block;
+		padding-left: 12px;
+	}
+}
+
+#content .nf-field-container {
+	margin-bottom: 5px;
+}
