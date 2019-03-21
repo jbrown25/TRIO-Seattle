@@ -336,8 +336,11 @@ textarea {
     display: block;
     padding-left: 12px; }
 
-#content .nf-field-container {
+#content .nf-field-container.labe-above {
   margin-bottom: 5px; }
+
+#content .nf-field-container.labe-hidden {
+  margin-bottom: 10px; }
 
 .site-footer {
   background-color: #141414;

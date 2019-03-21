@@ -50,6 +50,10 @@ textarea {
 	}
 }
 
-#content .nf-field-container {
+#content .nf-field-container.labe-above {
 	margin-bottom: 5px;
+}
+
+#content .nf-field-container.labe-hidden {
+	margin-bottom: 10px;
 }
