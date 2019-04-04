@@ -44,9 +44,9 @@
 			) );
 			?>
 		</div><!-- .entry-content -->
-		<?php if ( get_edit_post_link() ) : ?>
 			<footer class="entry-footer">
 				<a href="<?php echo get_post_permalink(); ?>" class="btn btn-primary post_link">CONTINUE READING</a>
+				<?php if ( get_edit_post_link() ) : ?>
 				<?php
 				edit_post_link(
 					sprintf(
@@ -65,7 +65,7 @@
 					'</span>'
 				);
 				?>
+				<?php endif; ?>
 			</footer><!-- .entry-footer -->
 	</div>
-	<?php endif; ?>
 </article><!-- #post-<?php the_ID(); ?> -->

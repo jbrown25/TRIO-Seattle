@@ -119,30 +119,38 @@ if ( ! function_exists( 'trio_v1_post_thumbnail' ) ) :
 	 * element when on single views.
 	 */
 	function trio_v1_post_thumbnail() {
-		if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
+		if ( post_password_required() || is_attachment() ) {
 			return;
 		}
 
-		if ( is_singular() ) :
-			?>
+		if(has_post_thumbnail()){
+			if ( is_singular() ) :
+				?>
 
-			<div class="post-thumbnail">
-				<?php the_post_thumbnail(); ?>
-			</div><!-- .post-thumbnail -->
+				<div class="post-thumbnail">
+					<?php the_post_thumbnail(); ?>
+				</div><!-- .post-thumbnail -->
 
-		<?php else : ?>
+			<?php else : ?>
 
-		<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
+			<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
+				<?php
+				the_post_thumbnail( 'post-thumbnail', array(
+					'alt' => the_title_attribute( array(
+						'echo' => false,
+					) ),
+				) );
+				?>
+			</a>
+
 			<?php
-			the_post_thumbnail( 'post-thumbnail', array(
-				'alt' => the_title_attribute( array(
-					'echo' => false,
-				) ),
-			) );
-			?>
-		</a>
-
-		<?php
-		endif; // End is_singular().
+			endif; // End is_singular().
+		}else{
+			if(get_post_type() == 'post'): ?>
+				<div class="post-thumbnail">
+					<img src="https://via.placeholder.com/600x600" alt="placeholder" class="attachment-post-thumbnail" />
+				</div>
+			<?php endif; 
+		}
 	}
 endif;
