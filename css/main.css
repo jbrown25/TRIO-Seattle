@@ -40,6 +40,7 @@ h5 {
 small, .text_small {
   font-size: 0.8em; }
 
+h1,
 h2,
 h3,
 h4 {
@@ -155,6 +156,11 @@ a {
 
 .content-area {
   padding-bottom: 50px; }
+
+h1.page_heading {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2.8em; }
 
 .index .post,
 .archive .post {
@@ -341,6 +347,9 @@ textarea {
 
 #content .nf-field-container.labe-hidden {
   margin-bottom: 10px; }
+
+.widget-title {
+  color: #00640C; }
 
 .site-footer {
   background-color: #141414;
