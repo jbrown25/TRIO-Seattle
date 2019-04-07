@@ -1,5 +1,7 @@
 Trio Wordpress theme, based on [underscores](https://github.com/Automattic/_s).
 
+Staging area is at [http://trio.justinbrowndev.com](http://trio.justinbrowndev.com).
+
 Source SCSS and JS files are in `src/scss` and `src/js`, destination files are in `css` and `js`
 
 Run `npm install` to install dependencies.
