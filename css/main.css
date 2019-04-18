@@ -283,6 +283,9 @@ h1.page_heading {
 /*--------------------------------------------------------------
 ## Story
 --------------------------------------------------------------*/
+.story_content strong {
+  margin: 8px 0 12px 0; }
+
 .pagination {
   margin-top: 0; }
   .pagination .page-numbers {
