@@ -288,6 +288,7 @@ h1.page_heading {
 
 .post-type-archive-story .archive-items {
   width: 1170px;
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -332,7 +333,7 @@ h1.page_heading {
     -ms-flex: 0 0 49%;
     flex: 0 0 49%; } }
 
-@media (max-width: 767) {
+@media (max-width: 767px) {
   .post-type-archive-story .story,
   .post-type-archive-story .type-story {
     max-width: 100%;
