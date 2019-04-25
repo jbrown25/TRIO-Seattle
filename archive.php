@@ -17,12 +17,14 @@ get_header();
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
+				<div class="container">
 				<?php
 				the_archive_title( '<h1 class="page-title">', '</h1>' );
 				the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
+				</div>
 			</header><!-- .page-header -->
-
+			<div class="archive-items">
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) :
@@ -35,8 +37,9 @@ get_header();
 				 */
 				get_template_part( 'template-parts/content', get_post_type() );
 
-			endwhile;
-
+			endwhile; ?>
+			</div> <!-- end archive-items -->
+			<?php
 			the_posts_navigation();
 
 		else :
