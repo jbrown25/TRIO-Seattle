@@ -9,6 +9,50 @@
 
 .admin-bar {
 	.navbar-fixed-top {
-		top: 33px;
+		top: 32px;
+	}
+}
+
+.navbar-default {
+	background-color: #444;
+	border: none;
+
+	.navbar-brand {
+		color: #fff;
+	}
+
+	.navbar-brand:hover {
+		color: #fff;
+	}
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #fff;
+	position: relative;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #fff;
+}
+
+@media(min-width: 768px){
+	.navbar-default .navbar-nav>li>a::before {
+		content: " ";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 5px;
+		width: 100%;
+		z-index: 1;
+		background-color: $green;
+		opacity: 0;
+		transform: scaleY(0);
+		transform-origin: bottom;
+		transition: opacity 0.25s ease, transform 0.25s ease;
+	}
+
+	.navbar-default .navbar-nav>li>a:hover::before {
+		transform: scaleY(1);
+		opacity: 1;
 	}
 }
