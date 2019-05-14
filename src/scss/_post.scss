@@ -1,5 +1,6 @@
 .index,
-.archive {
+.archive,
+.search_results {
 	.post {
 		display: flex;
 		flex-direction: row;
@@ -62,7 +63,8 @@
 
 @media screen and (max-width: 991px){
 	.index,
-	.archive {
+	.archive,
+	.search_results {
 		.post .post-thumbnail {
 			max-width: 33.33333%;
 			flex: 0 0 33.33333%;
@@ -77,7 +79,8 @@
 
 @media screen and (max-width: 767px){
 	.index,
-	.archive {
+	.archive,
+	.search_results {
 		.post .post-thumbnail {
 			max-width: 100%;
 			flex: 0 0 100%;

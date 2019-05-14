@@ -49,19 +49,23 @@
 	          		'container_class' => 'nav_container_class',
 	          		'menu_class' => 'nav navbar-nav',
 	          		'menu_id' => 'primary_nav',
-	          		'container' => 'ul'
+	          		'container' => 'ul',
+	          		'depth' => 2
 	          	));
 	          }else{
 	          	wp_nav_menu(array(
 	          		'container_class' => 'nav_container_class',
 	          		'menu_class' => 'nav navbar-nav',
 	          		'menu_id' => 'primary_nav',
-	          		'container' => 'ul'
+	          		'container' => 'ul',
+	          		'depth' => 2
 	          	));
 	          }
           ?>
         </div><!--/.nav-collapse -->
       </div>
+      <?php get_search_form(); ?>
+      <div class="search_overlay"></div>
     </nav>
 	<header id="masthead" class="site-header">
 		<div class="container">

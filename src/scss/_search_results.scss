@@ -1,0 +1,18 @@
+.search_result_content {
+	display: flex;
+	flex-direction: row;
+
+	.entry-summary {
+		flex: 1;
+	}
+
+	.post-thumbnail {
+		margin-right: 25px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.search_result_content {
+		flex-direction: column;
+	}
+}

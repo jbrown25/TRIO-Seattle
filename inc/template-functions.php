@@ -35,3 +35,15 @@ function trio_v1_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'trio_v1_pingback_header' );
+
+function add_search_form($items, $args) {
+          if( $args->theme_location === 'main-menu' ){
+          $items .= '<li>'
+          		 . '<span class="search_toggle">'
+          		 . '<i class="fa fa-search"></i>'
+          		 . '</span>'
+          		 . '</li>';
+          }
+        return $items;
+}
+add_filter('wp_nav_menu_items', 'add_search_form', 10, 2);
