@@ -2,6 +2,12 @@
 	padding: 12px 0;
 	box-shadow: 0 10px 20px 0 rgba(46,61,73, 0.15);
 	margin-bottom: 50px;
+
+	.post {
+		margin: 0 !important;
+		box-shadow: none !important;
+		display: inline !important;
+	}
 }
 
 .breadcrumb {

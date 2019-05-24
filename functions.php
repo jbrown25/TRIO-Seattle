@@ -130,14 +130,6 @@ function trio_v1_widgets_init() {
 		'before_title'	=> '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
-	register_sidebar( array(
-		'name'			=> 'Footer Column 3',
-		'id'			=> 'footer_column_3',
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'	=> '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
 }
 add_action( 'widgets_init', 'trio_v1_widgets_init' );
 
@@ -193,7 +185,11 @@ require get_template_directory() . '/inc/customizer.php';
 
 require get_template_directory() . '/inc/theme-functions.php';
 
-/* require get_template_directory() . '/inc/init-widgets.php'; */
+/**
+ * Register custom Bootstrap navigation walker
+ */
+
+require get_template_directory() . '/inc/wp-bootstrap-navwalker.php';
 
 //siteorigin widgets
 function trio_siteorigin_widgets($folders){

@@ -66,5 +66,13 @@
 	.social_links li a:hover::before {
 		transform: scale(1.5);
 	}
+
+	.copyright-info {
+		padding-top: 20px;
+		text-align: center;
+	}
 }
 
+.footer_menu .sub-menu {
+	padding-left: 10px;
+}

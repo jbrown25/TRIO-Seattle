@@ -35,6 +35,15 @@
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:active {
 	color: #fff;
+	background-color: transparent;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:active {
+	background-color: transparent;
+	color: #fff;
 }
 
 @media(min-width: 768px){
@@ -75,4 +84,23 @@
 	background-color: rgba(0, 0, 0, 0.4);
 	z-index: -1;
 	display: none;
+}
+
+.dropdown-menu {
+	background-color: $green;
+}
+
+.dropdown-menu>li>a {
+	color: #fff;
+	background-color: transparent;
+}
+
+.dropdown-menu>li>a:hover {
+	color: #fff;
+	background-color: $dark_green;
+}
+
+.dropdown-menu>li>a:active,
+.dropdown-menu>li>a:focus {
+	color: #fff;
 }
