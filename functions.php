@@ -144,7 +144,8 @@ function trio_v1_scripts() {
 	wp_enqueue_style( 'trio-v1-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'trio-v1-main-css', get_template_directory_uri() . '/css/main.css');
 
-	wp_enqueue_script('bootstrap_scripts', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array('jquery'), '20151215', false);
+	wp_enqueue_script('bootstrap_scripts', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array('jquery'), '20151215', true);
+	wp_enqueue_script('navbar-hover', get_template_directory_uri() . '/js/navbar-hover.js', array('jquery'), '20151215', true);
 	wp_enqueue_script( 'trio-v1-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'trio-v1-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
@@ -184,6 +185,12 @@ require get_template_directory() . '/inc/customizer.php';
  */
 
 require get_template_directory() . '/inc/theme-functions.php';
+
+/**
+ * Register custom meta boxes
+ */
+
+require get_template_directory() . '/inc/meta-boxes.php';
 
 /**
  * Register custom Bootstrap navigation walker

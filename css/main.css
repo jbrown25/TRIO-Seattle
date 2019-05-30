@@ -444,6 +444,9 @@ h1.page_heading {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%; } }
 
+.personnel_title {
+  margin-top: 0; }
+
 .search_result_content {
   display: -webkit-box;
   display: -ms-flexbox;
