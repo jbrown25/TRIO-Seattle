@@ -17,4 +17,8 @@
     search_form.removeClass('active');
     search_overlay.hide();
   });
+  /*NAVBAR*/
+
+  var dropdowns = $('.dropdown-toggle');
+  dropdowns.attr('data-hover', 'dropdown');
 })(jQuery);

@@ -19,4 +19,9 @@
 		search_overlay.hide();
 	});
 
+	/*NAVBAR*/
+
+	const dropdowns = $('.dropdown-toggle');
+	dropdowns.attr('data-hover', 'dropdown');
+
 })(jQuery);
