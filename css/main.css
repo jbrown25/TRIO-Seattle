@@ -113,6 +113,12 @@ a {
     color: #fff;
     text-shadow: 1px 1px 1px #333; }
 
+.navbar-brand.contains-image {
+  padding: 5px 0; }
+  .navbar-brand.contains-image img {
+    height: 100%;
+    width: auto; }
+
 .breadcrumbs {
   padding: 12px 0;
   -webkit-box-shadow: 0 10px 20px 0 rgba(46, 61, 73, 0.15);

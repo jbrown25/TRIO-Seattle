@@ -39,7 +39,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="<?php echo get_home_url(); ?>">TRIO Seattle</a>
+          <!--<a class="navbar-brand" href="<?php echo get_home_url(); ?>">TRIO Seattle</a>-->
+          <?php
+			$custom_logo_id = get_theme_mod( 'custom_logo' );
+			if($custom_logo_id):
+				$custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
+				echo '<a class="navbar-brand contains-image" href="' . get_home_url() . '"><img src="' . esc_url( $custom_logo_url ) . '" alt=""></a>';
+			else: ?>
+ 				<a class="navbar-brand" href="<?php echo get_home_url(); ?>">TRIO Seattle</a>
+			<?php endif;
+          ?>
         </div>
         <div id="navbar" class="navbar-collapse collapse navbar-right">
           <?php

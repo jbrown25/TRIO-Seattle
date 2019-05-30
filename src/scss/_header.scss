@@ -54,3 +54,12 @@
 		text-shadow: $heading_shadow;
 	}
 }
+
+.navbar-brand.contains-image {
+	padding: 5px 0;
+
+	img {
+		height: 100%;
+		width: auto;
+	}
+}
