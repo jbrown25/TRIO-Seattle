@@ -1,14 +1,16 @@
 <?php
+/*TRIO meta boxes*/
 
+/* Personnel can have professional titles  */
 
-//for testing
+//add meta box to screen
 function personnel_title_meta_box() {
 
-    $screens = array( 'staff', 'board' );
+    $screens = array( 'staff', 'board' ); //staff and board post types
 
     foreach ( $screens as $screen ) {
         add_meta_box(
-            'global-notice',
+            'personnel-title',
             __( 'Personnel Title', 'trio-v1' ),
             'personnel_title_meta_box_callback',
             $screen
@@ -18,6 +20,7 @@ function personnel_title_meta_box() {
 
 add_action( 'add_meta_boxes', 'personnel_title_meta_box' );
 
+//create input
 function personnel_title_meta_box_callback($post)
 {
 
@@ -27,8 +30,7 @@ function personnel_title_meta_box_callback($post)
     <?php
 }
 
-
-
+//save input data on save post
 function personnel_title_save_data($post_id)
 {
     if (array_key_exists('personnel_title', $_POST)) {
