@@ -8,8 +8,6 @@
 
 ( function( $ ) {
 
-	console.log('customizer works');
-
 	// Site title and description.
 	wp.customize( 'blogname', function( value ) {
 		value.bind( function( to ) {
@@ -50,6 +48,12 @@
 	});	
 
 	wp.customize('trio_header_button_link', function(value){
+		value.bind(function(to){
+			$('#header_button_link').attr('href', to);
+		});
+	});
+
+	wp.customize('trio_header_button_text', function(value){
 		value.bind(function(to){
 			$('#header_button_link').text(to);
 		});

@@ -88,7 +88,7 @@
 						<?php if(is_front_page()) : ?>
 								<p class="masthead_sub_text"><?php echo get_theme_mod('trio_front_page_text'); ?></p>
 						<?php endif; ?>
-						<a href="<?php echo get_theme_mod('trio_header_button_link'); ?>" class="btn btn-primary btn-lg" role="button" id="header_button_link">DONATE TO TRIO</a>
+						<a href="<?php echo get_theme_mod('trio_header_button_link'); ?>" class="btn btn-primary btn-lg" role="button" id="header_button_link"><?php echo get_theme_mod('trio_header_button_text'); ?></a>
 					</div>
 				</div>
 			</div>

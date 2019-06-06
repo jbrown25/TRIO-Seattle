@@ -55,7 +55,7 @@ function trio_v1_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'trio_header_button_link',
 		array(
-			'default' => 'http://trioseattle.org',
+			'default' => 'https://trioseattle.org',
 			'transport' => 'postMessage'
 		)
 	);
@@ -66,6 +66,24 @@ function trio_v1_customize_register( $wp_customize ) {
 			'section' => 'trio_masthead_options',
 			'label' => __('Masthead Button Link', 'trio-v1'),
 			'description' => __('Header button link. Example: if donate button, enter full address of the donate page.'),
+			'type' => 'text'
+		)
+	);
+
+	$wp_customize->add_setting(
+		'trio_header_button_text',
+		array(
+			'default' => 'DONATE TO TRIO',
+			'transport' => 'postMessage'
+		)
+	);
+
+	$wp_customize->add_control(
+		'trio_header_button_text',
+		array(
+			'section' => 'trio_masthead_options',
+			'label' => __('Masthead Button Text', 'trio-v1'),
+			'description' => __('Header button text', 'trio-v1'),
 			'type' => 'text'
 		)
 	);
