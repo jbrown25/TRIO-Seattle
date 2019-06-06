@@ -634,6 +634,10 @@ textarea {
 .widget-title {
   color: #00640C; }
 
+#dbox-form-embed {
+  display: block;
+  margin: 0 auto; }
+
 .site-footer {
   background-color: #141414;
   padding: 75px 0; }
