@@ -73,6 +73,12 @@
 	}
 }
 
+@media screen and (max-width: 767px){
+	.site-footer .social_links {
+		text-align: center;
+	}
+}
+
 .footer_menu .sub-menu {
 	padding-left: 10px;
 }
