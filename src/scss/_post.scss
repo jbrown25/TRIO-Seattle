@@ -109,3 +109,10 @@
 		display: none;
 	}
 }
+
+@media screen and (max-width: 767px){
+	.post_link {
+		width: 100%;
+		text-align: center;
+	}
+}

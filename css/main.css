@@ -232,6 +232,11 @@ a {
   background-color: #003100;
   color: #fff; }
 
+@media screen and (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+    color: #fff; } }
+
 .btn-primary {
   padding-top: 8px;
   padding-bottom: 8px;
@@ -384,6 +389,11 @@ h1.page_heading {
 
 .single_post .post_link {
   display: none; }
+
+@media screen and (max-width: 767px) {
+  .post_link {
+    width: 100%;
+    text-align: center; } }
 
 .front_page h1 {
   font-family: "Open Sans", sans-serif;
